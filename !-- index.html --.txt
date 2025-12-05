@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Jukti's portfolio and projects">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jukti | Portfolio</title>
+  <link rel="canonical" href="https://yourusername.github.io/mywebsite/">
+  <style>
+    :root { --bg:#0f172a; --text:#e2e8f0; --accent:#38bdf8; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, Arial, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 28px 20px; border-bottom: 1px solid #1f2937; position: sticky; top:0; background: rgba(15,23,42,.9); backdrop-filter: blur(6px); }
+    header nav a { color: var(--text); margin-right: 16px; text-decoration: none; opacity:.85; }
+    header nav a:hover { color: var(--accent); opacity:1; }
+    .hero { max-width: 880px; margin: 40px auto; padding: 0 20px; }
+    .hero h1 { font-size: 2.2rem; margin: 0 0 10px; }
+    .hero p { margin: 0 0 18px; opacity:.9; }
+    .btn { display:inline-block; background: var(--accent); color:#062b3b; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600; }
+    .grid { max-width: 980px; margin: 30px auto; padding: 0 20px; display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px; }
+    .card { background:#0b1329; border:1px solid #1f2937; border-radius:12px; padding:16px; }
+    .card h3 { margin:0 0 8px; font-size:1.1rem; }
+    footer { max-width: 980px; margin: 40px auto; padding: 20px; border-top:1px solid #1f2937; opacity:.8; }
+    @media (max-width:520px) { .hero h1 { font-size:1.6rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <h1>Hi, I’m Jukti</h1>
+    <p>I build mods, tweak games, and craft clean, fast websites. This is my simple portfolio.</p>
+    <a class="btn" href="#projects">See projects</a>
+  </section>
+
+  <section class="grid" id="projects" aria-label="Projects">
+    <div class="card">
+      <h3>Minecraft Mod Setup</h3>
+      <p>Forge/Fabric configs, version matching, and performance tuning.</p>
+    </div>
+    <div class="card">
+      <h3>Roblox Tools</h3>
+      <p>Small utility scripts and gameplay helpers.</p>
+    </div>
+    <div class="card">
+      <h3>Web Snippets</h3>
+      <p>HTML/CSS/JS mini-projects and UI experiments.</p>
+    </div>
+  </section>
+
+  <section class="hero" id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+    <p>GitHub: github.com/yourusername</p>
+  </section>
+
+  <footer>
+    <small>© 2025 Jukti • Fast, simple, and to the point.</small>
+  </footer>
+</body>
+</html>
